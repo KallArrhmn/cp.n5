@@ -12,7 +12,7 @@ class Controller extends BaseController
 
     public function login()
     {
-        return view('auth.login-register', [
+        return view('auth.login', [
             'title'    =>'CP | SMKN 5 Kab Tng',
         ]);
     }
