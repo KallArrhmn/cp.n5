@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [Controller::class, 'login'])->name('Home');
+Route::get('/', [Controller::class, 'login'])->name('login');
+Route::get('/register', [Controller::class, 'register'])->name('register');

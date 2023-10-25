@@ -16,4 +16,11 @@ class Controller extends BaseController
             'title'    =>'CP | SMKN 5 Kab Tng',
         ]);
     }
+
+    public function register()
+    {
+        return view('auth.register', [
+            'title'    =>'CP | SMKN 5 Kab Tng',
+        ]);
+    }
 }
