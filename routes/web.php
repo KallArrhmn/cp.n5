@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [Controller::class, 'login'])->name('login');
-Route::get('/register', [Controller::class, 'register'])->name('register');
+
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::get('/register', function () {
+    return view('auth.register');
+});
+
+Route::get('/dashboard-siswa', function () {
+    return view('component.dashboard-siswa');
+});
+
+Route::post('/login', 'LoginController@postlogin')->name('login');
+Route::post('/register', 'RegisterController@postregister')->name('register');
+Route::post('/dashboard-siswa', 'Dashboard-siswaController@postregister')->name('dashboard-siswa');
+

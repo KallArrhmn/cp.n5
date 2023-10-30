@@ -1,0 +1,78 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    margin-top: 3 !important;
+}
+
+.logo-left {
+    margin-right: 50px; /* Menggeser logo ke kiri sejauh 20 piksel */
+}
+
+.icon-nav {
+    position: relative;
+    color: #FFFFFF8C;
+}
+
+.icon-nav:hover{
+    color: white;
+}
+
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: rgb(240, 32, 32, 0.86);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    top: 10px;
+    right: 63px;
+}
+
+img {
+    max-width: 50px;
+    max-height: 60px;
+}
+
+.card {
+    width: 70rem; /* Mengatur lebar kartu sesuai dengan lebar viewport */
+    height: calc(100vh - 60px); /* Mengatur tinggi kartu sesuai dengan tinggi viewport dikurangi dengan tinggi navbar (60px) */
+}
+
+.card-body {
+    height: 100%; /* Mengatur tinggi dari bagian body kartu */
+    overflow: auto; /* Menambahkan overflow auto jika konten kartu lebih panjang dari tinggi kartu */
+}
+
+
+@media (max-width: 768px) {
+    .left-logo,
+    .right-logo {
+        width: 60px;
+    }
+
+    .login-container,
+    .register-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Gaya untuk layar dengan lebar maksimum 576px */
+@media (max-width: 576px) {
+    .left-logo,
+    .right-logo {
+        width: 44px;
+    }
+
+    .login-container,
+    .register-container {
+        margin-left: 5px;
+    }
+}

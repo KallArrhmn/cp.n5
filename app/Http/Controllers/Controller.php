@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use App\Models\User;
 
 class Controller extends BaseController
 {
@@ -13,14 +14,21 @@ class Controller extends BaseController
     public function login()
     {
         return view('auth.login', [
-            'title'    =>'CP | SMKN 5 Kab Tng',
+            'title'    =>'Login',
         ]);
     }
 
     public function register()
     {
         return view('auth.register', [
-            'title'    =>'CP | SMKN 5 Kab Tng',
+            'title'    =>'Register',
+        ]);
+    }
+
+    public function dashboard_siswa()
+    {
+        return view('component.dashboard-siswa', [
+            'title'    =>'Dashboard-siswa',
         ]);
     }
 }
