@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->string('fullname');
             $table->string('username')->unique();
+            $table->string('email')->unique();
             $table->string('password');
-            $table->enum('role', ['admin','siswa','guru','kepala_sekolah']);
-            $table->rememberToken();
+            $table->enum('role', ['siswa', 'guru', 'kepala_sekolah'])->default('siswa');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        //
     }
 };

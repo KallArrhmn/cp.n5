@@ -6,18 +6,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html lang="en">
 
 <head>
-    @include('template.head')
+    @include('dashboard-guru.template.head')
 </head>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
 
         <!-- Navbar -->
-        @include('template.navbar')
+        @include('dashboard-guru.template.navbar')
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        @include('template.sidebar')
+        @include('dashboard-guru.template.sidebar')
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -80,12 +80,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- /.control-sidebar -->
 
         <!-- Main Footer -->
-        @include('template.footer')
+        @include('dashboard-guru.template.footer')
     </div>
     <!-- ./wrapper -->
 
     <!-- REQUIRED SCRIPTS -->
-        @include('template.script')
+        @include('dashboard-guru.template.script')
     
 </body>
 

@@ -18,10 +18,23 @@ class Controller extends BaseController
         ]);
     }
 
-    public function register()
+    public function login_aplikasi()
     {
-        return view('auth.register', [
-            'title'    =>'Register',
+        return view('Login.login_aplikasi', [
+            'title'    =>'Login_aplikasi',
+        ]);
+    }
+
+    public function register_aplikasi()
+    {
+        return view('Login.register_aplikasi', [
+            'title'    =>'Register_aplikasi',
+        ]);
+    }
+    public function reset_password()
+    {
+        return view('Login.reset_password', [
+            'title'    =>'Reset_password',
         ]);
     }
 
@@ -29,6 +42,20 @@ class Controller extends BaseController
     {
         return view('component.dashboard-siswa', [
             'title'    =>'Dashboard-siswa',
+        ]);
+    }
+
+    public function dashboard_guru()
+    {
+        return view('dashboard-guru.dashboard-guru', [
+            'title'    =>'Dashboard-guru',
+        ]);
+    }
+
+    public function kelas10() 
+    {
+        return view('dashboard-siswa.kelas.kelas 10.kelas10', [
+            'title' =>'kelas10',
         ]);
     }
 }

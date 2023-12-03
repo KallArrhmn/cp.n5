@@ -8,3 +8,7 @@
 <link rel="stylesheet" href="{{ asset('adminlte/plugins/fontawesome-free/css/all.min.css') }}">
 <!-- Theme style -->
 <link rel="stylesheet" href="{{ asset('adminlte/dist/css/adminlte.min.css') }}">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ asset('js/master.js') }}"></script>
+
+<link rel="stylesheet" href="{{asset('css/dashboard.css')}}">

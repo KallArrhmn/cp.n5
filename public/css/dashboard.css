@@ -76,3 +76,67 @@ img {
         margin-left: 5px;
     }
 }
+
+
+@media (max-width: 576px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+
+    th, td {
+        white-space: nowrap;
+    }
+}
+
+.main-sidebar {
+    background-color: #190482;
+    color: #ffffff;
+}
+
+.brand-link {
+    color: white; 
+}
+
+.nav-sidebar .nav-link p{
+    color: #ffffff  ;
+}
+
+.brand-logo {
+    width: 10%;
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.small-table {
+    font-size: 15px;
+    width: 50%;
+}
+
+.small-table th,
+.small-table td {
+    padding: 0.5rem;
+}
+
+.content-wrapper {
+    padding-top: 60px;
+}
+
+.card-body {
+    width: 75%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}

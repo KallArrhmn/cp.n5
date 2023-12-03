@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Schema\Blueprint;
 
 class UsersTableSeeder extends Seeder
 {
@@ -13,10 +14,12 @@ class UsersTableSeeder extends Seeder
      */
     public function run(): void
     {
-        User::create([
-            'username' => 'admin',
-            'password' => bcrypt('password'),
-            'role' => 'admin',
-        ]);
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('username')->unique();
+            $table->string('password');
+            $table->enum('role', ['siswa', 'guru', 'kepala_sekolah']);
+            $table->timestamps();
+        });
     }
 }
