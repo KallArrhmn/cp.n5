@@ -70,8 +70,7 @@
                                 class="btn btn-success col-sm-12">Login</button>
                         </div>
                         <div class="col-12">
-                            <button href="/register_aplikasi" type="submit" name="submit"
-                                class="btn btn-primary col-sm-12">Register</button>
+                            <a href="{{route('register')}}" class="btn btn-primary col-sm-12">Register</a>
                         </div>
                     </div>
                 </form>
