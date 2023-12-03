@@ -14,13 +14,13 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::insert([
-            [
-                'fullname' => 'Siswa',
-                'username' => 'siswa',
-                'email' => 'siswa@gmail.com',
-                'password' => bcrypt('siswa123'),
-                'role' => 'siswa'
-            ],
+            // [
+            //     'fullname' => 'Siswa',
+            //     'username' => 'siswa',
+            //     'email' => 'siswa@gmail.com',
+            //     'password' => bcrypt('siswa123'),
+            //     'role' => 'siswa'
+            // ],
             [
                 'fullname' => 'Guru',
                 'username' => 'Guru',
