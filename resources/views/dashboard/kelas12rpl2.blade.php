@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +20,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('sbadmin') }}/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet" type="text/css" >
 
 </head>
 
@@ -60,8 +60,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Kelas / Jurusan</h6>
-                        <a class="collapse-item" href="buttons.html">12 RPL 1</a>
-                        <a class="collapse-item" href="{{route('kelas')}}">12 RPL 2</a>
+                        <a class="collapse-item" href="{{route('kelasrpl1')}}">12 RPL 1</a>
+                        <a class="collapse-item" href="{{route('kelasrpl2')}}">12 RPL 2</a>
                     </div>
                 </div>
             </li>
@@ -166,28 +166,30 @@
                     <div class="container-fluid">
   
                       <!-- DataTales Example -->
-                      <div class="card shadow mb-4 c">
+                      <div class="card shadow mb-4 ceter">
                           <div class="card-body">
                               <div class="table-responsive">
                                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                       <thead>
                                           <tr>
-                                              <th class="center">NIS</th>
-                                              <th>Nama</th>
-                                              <th>Jenis Kelamin</th>
+                                            <th class="center">Nis</th>
+                                            <th>Nama</th>
+                                            <th>Jenis Kelamin</th>
+                                            <th>Point</th>
                                           </tr>
                                       </thead>
                                       <tbody>
-                                          
                                           <tr>
-                                              <td>212210361</td>
-                                              <td>HAIKAL ARRAHMAN</td>
-                                              <td>L</td>
+                                            <td>212210361</td>
+                                            <td>HAIKAL ARRAHMAN</td>
+                                            <td>L</td>
+                                            <td>100</td>
                                           </tr>
                                           <tr>
                                             <td>212210371</td>
                                             <td>MUHAMMAD CHAIRIL GIBRAN</td>
                                             <td>L</td>
+                                            <td>100</td>
                                           </tr>
                                       </tbody>
                                   </table>
@@ -206,7 +208,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Credit Point 2023</span>
+                        <span>Copyright &copy; Credit Point | <?php echo date("F Y"); ?></span>
                     </div>
                 </div>
             </footer>

@@ -39,9 +39,13 @@ Route::get('/dashboard', function () {
     return view('dashboard.dashboard_siswa'); 
 })->name('dashboard');
 
-Route::get('/kelas', function () {
+Route::get('/kelasrpl2', function () {
     return view('dashboard.kelas12rpl2'); 
-})->name('kelas');
+})->name('kelasrpl2');
+
+Route::get('/kelasrpl1', function () {
+    return view('dashboard.kelas12rpl1'); 
+})->name('kelasrpl1');
 
 
 

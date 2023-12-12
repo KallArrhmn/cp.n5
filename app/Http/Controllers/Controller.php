@@ -50,4 +50,11 @@ class Controller extends BaseController
             'title'     => '12rpl2',
         ]);
     }
+
+    public function kelas12rpl1()
+    {
+        return view('dashboard.kelas12rpl1', [
+            'title'     => '12rpl1',
+        ]);
+    }
 }

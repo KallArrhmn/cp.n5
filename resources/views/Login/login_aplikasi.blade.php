@@ -23,7 +23,7 @@
         <div class="card">
             <div class="card-body login-card-body" style="border-radius: 30px">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <img src="{{ asset('assets/images/LOGO-NEW-SMKN5.png') }}" alt="" width="45px">
+                    <img src="{{ asset('assets/images/logosmk.png') }}" alt="" width="45px">
                     <div class="login-container">
                         <h3 class="login-title text-center p-1">
                             <strong>Login</strong>
