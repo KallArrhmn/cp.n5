@@ -11,4 +11,20 @@ class User extends Authenticatable
     use HasFactory;
 
     protected $guarded = [];
+    protected $fillable = [
+        'nip_nis',
+        'password',
+        'name',
+        'email'
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    public function getAuthIdentifierName()
+    {
+        return  'ni[_nis';
+    }
 }

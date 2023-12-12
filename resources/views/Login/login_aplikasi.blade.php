@@ -23,7 +23,7 @@
         <div class="card">
             <div class="card-body login-card-body" style="border-radius: 30px">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <img src="{{ asset('assets/images/LOGO-NEW-SMKN5.png') }}" alt="" width="50px">
+                    <img src="{{ asset('assets/images/LOGO-NEW-SMKN5.png') }}" alt="" width="45px">
                     <div class="login-container">
                         <h3 class="login-title text-center p-1">
                             <strong>Login</strong>
@@ -38,10 +38,10 @@
                 <form action="{{ route('login.process') }}" method="post">
                     @csrf
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="username" name="username">
+                        <input type="text" class="form-control" placeholder="NIP atau NIS" name="username">
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
+                                <span class="fas fa-user"></span>
                             </div>
                         </div>
                     </div>
@@ -62,9 +62,9 @@
                                 <option value="kepala_sekolah">Kepala Sekolah</option>
                             </select>
                         </div> --}}
-                        <div class="col-12" style="margin-bottom: 10px">
-                            <a href="/reset_password" >Reset Password</a>
-                        </div>
+                        {{-- <div class="col-12" style="margin-bottom: 10px">
+                            <a href="{{route('reset')}}" >Reset Password</a>
+                        </div> --}}
                         <div class="col-12" style="margin-bottom: 20px">
                             <button href="/dashboard" type="submit" name="submit"
                                 class="btn btn-success col-sm-12">Login</button>

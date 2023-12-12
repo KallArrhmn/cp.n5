@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->enum('role', ['siswa', 'guru', 'kepala_sekolah'])->default('siswa');
+            $table->string('nip')->nullable();
+            $table->string('nis')->nullable();
             $table->timestamps();
         });
     }

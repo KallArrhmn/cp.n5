@@ -31,31 +31,23 @@ class Controller extends BaseController
             'title'    =>'Register_aplikasi',
         ]);
     }
-    public function reset_password()
+    // public function reset_password()
+    // {
+    //     return view('Login.reset_password', [
+    //         'title'    =>'Reset_password',
+    //     ]);
+    // }
+    public function dashboard()
     {
-        return view('Login.reset_password', [
-            'title'    =>'Reset_password',
+        return view('dashboard.dashboard_siswa', [
+            'title'     => 'dashboard',
         ]);
     }
 
-    public function dashboard_siswa()
+    public function kelas12rpl2()
     {
-        return view('component.dashboard-siswa', [
-            'title'    =>'Dashboard-siswa',
-        ]);
-    }
-
-    public function dashboard_guru()
-    {
-        return view('dashboard-guru.dashboard-guru', [
-            'title'    =>'Dashboard-guru',
-        ]);
-    }
-
-    public function kelas10() 
-    {
-        return view('dashboard-siswa.kelas.kelas 10.kelas10', [
-            'title' =>'kelas10',
+        return view('dashboard.kelas12rpl2', [
+            'title'     => '12rpl2',
         ]);
     }
 }
