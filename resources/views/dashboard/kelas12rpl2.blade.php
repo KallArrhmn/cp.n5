@@ -60,8 +60,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Kelas / Jurusan</h6>
-                        <a class="collapse-item" href="{{route('kelasrpl1')}}">12 RPL 1</a>
-                        <a class="collapse-item" href="{{route('kelasrpl2')}}">12 RPL 2</a>
+                        <a class="collapse-item" href="{{route('kelas12rpl1')}}">12 RPL 1</a>
+                        <a class="collapse-item" href="{{route('kelas12rpl2')}}">12 RPL 2</a>
                     </div>
                 </div>
             </li>

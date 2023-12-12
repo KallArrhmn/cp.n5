@@ -21,7 +21,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('sbadmin') }}/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('css/dashboard2.css') }}" rel="stylesheet" type="text/css" >
 
 </head>
 
@@ -38,7 +38,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/dashboard1">
+                <a class="nav-link" href="/dashboard2">
                     <ion-icon name="home-outline"></ion-icon>
                     <span>Dashboard</span></a>
             </li>
@@ -61,8 +61,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Kelas / Jurusan</h6>
-                        <a class="collapse-item" href="{{route('kelas12rpl1')}}">12 RPL 1</a>
-                        <a class="collapse-item" href="{{route('kelas12rpl2')}}">12 RPL 2</a>
+                        <a class="collapse-item" href="{{route('kelas_12rpl1')}}">12 RPL 1</a>
+                        <a class="collapse-item" href="{{route('kelas_12rpl2')}}">12 RPL 2</a>
                     </div>
                 </div>
             </li>

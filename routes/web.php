@@ -16,6 +16,22 @@ use Illuminate\Support\Facades\Auth;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+// Khusus Guru dan Kepsek Route
+Route::get('/dashboard2', function () {
+    return view('dashboard.khusus.dashboard_guru_kepsek'); 
+})->name('dashboard2');
+
+Route::get('/kelas_12rpl1', function () {
+    return view('dashboard.khusus.kelas_12rpl1');
+})->name('kelas_12rpl1');
+
+Route::get('/kelas_12rpl2', function () {
+    return view('dashboard.khusus.kelas_12rpl2');
+})->name('kelas_12rpl2');
+// Akhir Route Guru dan Kepsek
+
+
 Route::get('/login', function () {
     return view('Login.login_aplikasi');
 })->name('login');
@@ -37,16 +53,15 @@ Route::get('/logout', function() {
 
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard_siswa'); 
-})->name('dashboard');
+})->name('dashboard1');
 
-Route::get('/kelasrpl2', function () {
-    return view('dashboard.kelas12rpl2'); 
-})->name('kelasrpl2');
+Route::get('/kelas12rpl1', function () {
+    return view('dashboard.kelas12rpl1');
+})->name('kelas12rpl1');
 
-Route::get('/kelasrpl1', function () {
-    return view('dashboard.kelas12rpl1'); 
-})->name('kelasrpl1');
-
+Route::get('/kelas12rpl2', function () {
+    return view('dashboard.kelas12rpl2');
+})->name('kelas12rpl2');
 
 
 // Route::post('/login_aplikasi', 'Login-aplikasiController@postlogin')->name('login_aplikasi');

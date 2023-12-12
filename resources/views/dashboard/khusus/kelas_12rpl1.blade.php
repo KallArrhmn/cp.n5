@@ -38,7 +38,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/dashboard1">
+                <a class="nav-link" href="/dashboard2">
                     <ion-icon name="home-outline"></ion-icon>
                     <span>Dashboard</span></a>
             </li>
@@ -61,8 +61,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Kelas / Jurusan</h6>
-                        <a class="collapse-item" href="{{route('kelas12rpl1')}}">12 RPL 1</a>
-                        <a class="collapse-item" href="{{route('kelas12rpl2')}}">12 RPL 2</a>
+                        <a class="collapse-item" href="{{route('kelas_12rpl1')}}">12 RPL 1</a>
+                        <a class="collapse-item" href="{{route('kelas_12rpl2')}}">12 RPL 2</a>
                     </div>
                 </div>
             </li>
@@ -93,13 +93,46 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    
-                    
-                    
-                    
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
                     <!-- Topbar Navbar -->
-                   
                     <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>   
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
@@ -118,46 +151,41 @@
                                 </a>
                             </div>
                         </li>
+
                     </ul>
+
                 </nav>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <!-- Page Heading -->
-                    <div class="centered-container">
-                        <div class="d-sm-flex align-items-center justify-content-between mb-4" style="width: 45%; margin: 0 auto;">
-                            <img src="{{ asset('assets/images/logosmk.png')}}" width="45" height="" alt="left logo">
-                            <h3 class="school-info" style="font-size: 16px; text-align: center; color: black;">
-                                <strong>SMKN 5 Kab. Tangerang</strong><br>
-                                <span style="font-size:14px; color: black;">PUSAT KEUNGGULAN | CENTER OF EXCELLENCE</span>
-                            </h3>
-                            <img src="{{ asset('assets/images/logo-banten.png')}}" width="50" height="" alt="right logo">
-                        </div>
-                    </div>
 
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Kelas</h1>
+                    </div>
                     <div class="container-fluid">
   
                       <!-- DataTales Example -->
-                      <div class="card shadow mb-4">
+                      <div class="card shadow mb-4 c">
                           <div class="card-body">
                               <div class="table-responsive">
                                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                       <thead>
                                           <tr>
-                                              <th class="center">Jenis Pelanggaran</th>
+                                              <th class="center">Nis</th>
+                                              <th>Nama</th>
+                                              <th>Jenis Kelamin</th>
                                               <th>Point</th>
                                           </tr>
                                       </thead>
                                       <tbody>
                                           
                                           <tr>
-                                              <td>Membawa atau mengkonsumsi miras, ganja, narkoba, penyalahgunaan obat-obatan dan sejenisnya yang memabukan di sekolah.</td>
-                                              <td>100</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Membawa, menonton, membuat, dan atau/ mengedarkan barang porno (buku, film, gambar, vcd dll) di sekolah.</td>
-                                            <td>100</td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
                                           </tr>
                                       </tbody>
                                   </table>
@@ -179,7 +207,7 @@
                         <span>Copyright &copy; Credit Point | <?php echo date("F Y"); ?></span>
                     </div>
                 </div>
-            </footer>            
+            </footer>
             <!-- End of Footer -->
 
         </div>

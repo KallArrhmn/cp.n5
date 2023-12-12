@@ -11,6 +11,17 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
+
+// Khusus Guru dan Kepsek Controller
+    public function dashboard2()
+    {
+        return view('dashboard.khusus.dashboard_guru_kepsek', [
+            'title'     => 'dashboard2',
+        ]);
+    }
+
+// Akhir Route Guru dan Kepsek
+
     public function login()
     {
         return view('auth.login', [
@@ -40,21 +51,22 @@ class Controller extends BaseController
     public function dashboard()
     {
         return view('dashboard.dashboard_siswa', [
-            'title'     => 'dashboard',
+            'title'     => 'dashboard1',
         ]);
     }
-
-    public function kelas12rpl2()
-    {
-        return view('dashboard.kelas12rpl2', [
-            'title'     => '12rpl2',
-        ]);
-    }
+    
 
     public function kelas12rpl1()
     {
         return view('dashboard.kelas12rpl1', [
             'title'     => '12rpl1',
+        ]);
+    }
+
+    public function kelas12rpl2()
+    {
+        return view('dashboard.kelas12rpl1', [
+            'title'     => '12rpl2',
         ]);
     }
 }
